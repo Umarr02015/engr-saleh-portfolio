@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saleh-J-Yakmut-Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newslatter form{
+    width: 250px;
+    max-width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.newslatter form input:first-child{
+    display:flex;
+    width: 100%;
+    padding: 14px 13px 14px 15px;
+    border: 2px solid rgb(252, 5, 5);;
+    outline: none;
+    border-radius: 30px; 
+
+
+}
+
+.newslatter form input:last-child{
+    position: absolute;
+    display: flex;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background-color: rgb(252, 5, 5);
+    color: white;
+    box-shadow: 0px 0px 5px rgb(250, 252, 249), 0px 0px 15px #858585;
+    top: 8px;
+    right: 5px;
+    
+}
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.brand{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fcfc;
+}
+/* hero Section*/
+.hero{
+    background-image: url(https://i.postimg.cc/mgm7BCC9/Background-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+.hero::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2a2d5e;
+    content: '';
+    opacity: .7;
+    z-index: -1;
+   
+}
+.bow{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: auto;
+    justify-content: flex-start;
+    margin-left: 80px;
+
+}
+
+.hero h1:nth-child(1){
+    animation-delay: 1.5s;
+    font-size: 5vw;
+
+}
+
+.hero h1:nth-child(2){
+    animation-delay: 2.5s;
+    font-size: 5vw;
+}
+
+.hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3.5s;
+    font-size: 5vw;
+}
+
+.hero h1{
+    display: flex;
+    width: fit-content;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+    
+}
+
+.hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+
+}
+
+.hero h1:nth-child(1) span{
+    animation-delay: 1s;
+    opacity: 0.9;
+}
+.hero h1:nth-child(2) span{
+    animation-delay: 2s;
+    opacity: 0.9;
+}
+.hero h1:nth-child(3) span{
+    animation-delay: 3s;
+    opacity: 0.9;
+}
+
+.cta{
+    display: flex;
+    padding: 10px 40px;
+    color: red;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid red;
+    font-size: 1rem; 
+    letter-spacing: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.15s;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
+.cta:active{
+    background-color: green;
+    color: black;
+    border: 2px solid green;
+}
+
+
+
+/* End hero Section*/
+
+
+/* About ME Section */
+.about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200x;
+    margin: 0 auto;
+    padding: 100px 20px;
+    color: white;
+    background-color: #191919;
+}
+.col-left{
+   
+    width: 250px;
+    height: 350px;
+}
+
+.col-right{
+    width: 100%;
+}
+.resear{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+.eng{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.section-title-1{
+    font-size: 4rem;
+    font-weight: 100px;
+    color: rgb(255, 248, 248);
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.about-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 10px whitesmoke;
+    z-index: 1;
+    
+}
+
+.about-img::after{
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    height: 48%;
+    width: 50%;
+    border: 7px solid crimson;
+    
+    
+}
+
+
+
+
+
+.call-to{
+    flex-direction: column    ;
+    padding: 5px 5px;
+    color: red;
+    background-color: transparent;
+    border: 2px solid red;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: background-color 0.15s;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.call-to:hover{
+    background-color: red;
+    color: white;
+
+}
+.call-to:active{
+    background-color: green;
+    color: black;
+    border: 2px solid green;
+}
+
+
+    
+/* End About ME Section */
+
+/* Skills Sections*/
+
+.skills{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #191919;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 100px;
+    color: rgb(255, 248, 248);
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-align: center;
+     
+}
+
+span{
+    color: crimson;
+    font-style: italic;
+    font-weight: bolder;
+}
+ .Top-p{
+    min-height: 20px;
+    flex-direction: column;
+    padding-top: 5px;
+    color: antiquewhite;
+
+}
+.resume{
+    padding: 5px 50px;
+    color: rgb(255, 4, 4);
+    background-color:transparent;
+    border-radius: 5px;
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bolder;
+    transition: 0.15s;
+    margin: 30px auto;
+}
+
+.resume:hover {
+    color: azure;
+    background-color: red;
+    box-shadow: 1px 1px 5px rgb(253, 253, 253);
+}
+.resume:active{
+    color:rgb(255, 248, 248);
+    background-color: green;
+    border-color: green;
+}
+
+.skills-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    flex-direction: row;
+}
+
+.container-items{
+    display: block;
+    background-color: black;  
+}
+
+.skills-bottom{
+    display: inline-block;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 3);
+    margin: 10px auto;
+    position: relative;
+    z-index: 1;
+}
+.career{
+    color: whitesmoke;
+    z-index: 1;
+    font-size:rem;
+    font-weight: bold;
+}
+.comment{
+    color:  rgb(160, 155, 155);
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 300px;
+}
+
+.skills-bottom::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 4, 95);
+    opacity: .4;
+    z-index: -1;
+}
+
+#skills-bottom .image-1{
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+}
+.img-1{
+    border-radius: 100px;
+}
+
+.view{
+
+   
+
+}
+
+/* End Skills Sections*/
+
+/* Recent Project*/
+.Project{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #191919; 
+
+}
+.project-button{
+    max-width: 400px;
+    display: inline-block;
+    background-color: black;
+    margin: 10px auto;
+   
+}
+.project-img::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    opacity: 0.2;
+}
+    
+.project-1{
+    color: #fcfc;
+    font-size: large;
+    font-weight: bolder;
+    margin: 10px;
+    overflow: hidden;
+}
+.career{
+    margin: 5px;
+}
+.project-img{
+    overflow: hidden;   
+    position: relative;
+}
+.p-img{
+
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px rgb(3, 13, 148);
+    
+}
+
+      
+
+ 
+/* End Recent Project*/
+
+/* Contact*/
+.contact {
+    flex-direction: column;
+    background-color: #191919;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.contact-items{
+    width: 400px;
+    width: 400px;
+    justify-content: center;
+}
+.contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px #000;
+    transition: .3s ease box-shadow;
+}
+.contact-item:hover{
+    box-shadow: 0px 0px 14px #fcfc;
+}
+.icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+.contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500px;
+    margin-bottom: 5px;
+    color: #fcfc;
+}
+
+.contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500px;
+    color: #fcfc;
+}
+/* End Contact*/
+
+
+/* Footer Section*/
+#Footer{
+    background-color: #000;
+
+}
+.footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+ 
+
+ .text-desc{
+    font-weight: 500px;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fcfc;
+ }
+
+ .social-items{
+    display: flex;
+    margin-bottom: 10px;
+ 
+ }
+
+  .social-icon{
+    height: 100px;
+    width: 100px;
+    margin: 0 5px;
+  }
+.image{
+    filter: grayscale(1);
+    transition: .5s ease filter;    
+  }
+  .image:hover{
+    filter: grayscale(0);
+  }
+ .copyright{
+    font-size: 1.3rem;
+    color: #fcfc;
+ }
+/* End Footer Section*/
+
+
+/* keyframe*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: o;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: rgb(250, 245, 245);
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: rgb(253, 8, 8);
+        font-weight: 500px;
+    }
+}
+/* keyframe*/
+
+/* media screen for tablet*/
+@media only screen and (min-width: 768px){
+    .cta {
+        font-size: 2rem;
+        justify-content: center;
+        
+    }
+    h1.section-title{
+        font-size: 7rem;
+    }
+   
+
+}
+
+ /* Hero */
+.hero h1{
+    font-size: 7rem;
+}
+ /* EndHero */
+
+ /* About ME Section */
+ .about{
+    flex-direction:row;
+ }
+ .col-left{
+    width: 600px
+    height: 400px;
+    padding-bottom:6px;
+ }
+
+ .col-left .about-img::after{
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid crimson;
+ }
+
+ .col-right{
+    text-align: left;
+    padding: 30px;
+ }
+ 
+ 
+ 
+
+ /* End About ME Section */
+
+ /* Skills Section */
+.skills-bottom{
+    flex-basis: 45%;
+    margin: 2.5%;
+}
+
+..section-title{
+    font-size: 7rem;
+}
+ /* End Skills Section */
+
+ /* Product Section */
+
+ .project-items{
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+ }
+
+ .project-button{{
+    height: 100%;
+ }}
+
+ .project-img{
+    height: 100%;
+ }
+
+ /* End Product Section */
+ /* Contact Section */
+ .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+ }
+ .contact-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin: 0;
+ }
+
+ .contact-items{
+    width: 20px;
+    flex-direction: row;
+
+ }
+
+ .Contact-top{
+    height: 100px;
+    width: 100px;
+ }
+
+.icon{
+    object-fit: contain;
+
+ }
+ .Contact-info{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+
+ }
+ /* End Contact Section */
+
+
+/* end media screen for tablet*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newslatter form{
+    width: 250px;
+    max-width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.newslatter form input:first-child{
+    display:flex;
+    width: 100%;
+    padding: 14px 13px 14px 15px;
+    border: 2px solid rgb(252, 5, 5);;
+    outline: none;
+    border-radius: 30px; 
+
+
+}
+
+.newslatter form input:last-child{
+    position: absolute;
+    display: flex;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background-color: rgb(252, 5, 5);
+    color: white;
+    box-shadow: 0px 0px 5px rgb(250, 252, 249), 0px 0px 15px #858585;
+    top: 8px;
+    right: 5px;
+    
+}
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.brand{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fcfc;
+}
+/* hero Section*/
+.hero{
+    background-image: url(./web.pic/Saleh\ Background_2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+.hero::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2a2d5e;
+    content: '';
+    opacity: .7;
+    z-index: -1;
+   
+}
+.bow{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: auto;
+    justify-content: flex-start;
+    margin-left: 80px;
+
+}
+
+.hero h1:nth-child(1){
+    animation-delay: 1.5s;
+    font-size: 5vw;
+
+}
+
+.hero h1:nth-child(2){
+    animation-delay: 2.5s;
+    font-size: 5vw;
+}
+
+.hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3.5s;
+    font-size: 5vw;
+}
+
+.hero h1{
+    display: flex;
+    width: fit-content;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+    
+}
+
+.hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+
+}
+
+.hero h1:nth-child(1) span{
+    animation-delay: 1s;
+    opacity: 0.9;
+}
+.hero h1:nth-child(2) span{
+    animation-delay: 2s;
+    opacity: 0.9;
+}
+.hero h1:nth-child(3) span{
+    animation-delay: 3s;
+    opacity: 0.9;
+}
+
+.cta{
+    display: flex;
+    padding: 10px 40px;
+    color: red;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid red;
+    font-size: 1rem; 
+    letter-spacing: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.15s;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
+.cta:active{
+    background-color: green;
+    color: black;
+    border: 2px solid green;
+}
+
+
+
+/* End hero Section*/
+
+
+/* About ME Section */
+.about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200x;
+    margin: 0 auto;
+    padding: 100px 20px;
+    color: white;
+    background-color: #191919;
+}
+.col-left{
+   
+    width: 250px;
+    height: 350px;
+}
+
+.col-right{
+    width: 100%;
+}
+.resear{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+.eng{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.section-title-1{
+    font-size: 4rem;
+    font-weight: 100px;
+    color: rgb(255, 248, 248);
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.about-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 10px whitesmoke;
+    z-index: 1;
+    
+}
+
+.about-img::after{
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    height: 48%;
+    width: 50%;
+    border: 7px solid crimson;
+    
+    
+}
+
+
+
+
+
+.call-to{
+    flex-direction: column    ;
+    padding: 5px 5px;
+    color: red;
+    background-color: transparent;
+    border: 2px solid red;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: background-color 0.15s;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.call-to:hover{
+    background-color: red;
+    color: white;
+
+}
+.call-to:active{
+    background-color: green;
+    color: black;
+    border: 2px solid green;
+}
+
+
+    
+/* End About ME Section */
+
+/* Skills Sections*/
+
+.skills{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #191919;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 100px;
+    color: rgb(255, 248, 248);
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-align: center;
+     
+}
+
+span{
+    color: crimson;
+    font-style: italic;
+    font-weight: bolder;
+}
+ .Top-p{
+    min-height: 20px;
+    flex-direction: column;
+    padding-top: 5px;
+    color: antiquewhite;
+
+}
+.resume{
+    padding: 5px 50px;
+    color: rgb(255, 4, 4);
+    background-color:transparent;
+    border-radius: 5px;
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bolder;
+    transition: 0.15s;
+    margin: 30px auto;
+}
+
+.resume:hover {
+    color: azure;
+    background-color: red;
+    box-shadow: 1px 1px 5px rgb(253, 253, 253);
+}
+.resume:active{
+    color:rgb(255, 248, 248);
+    background-color: green;
+    border-color: green;
+}
+
+.skills-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    flex-direction: row;
+}
+
+.container-items{
+    display: block;
+    background-color: black;  
+}
+
+.skills-bottom{
+    display: inline-block;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 3);
+    margin: 10px auto;
+    position: relative;
+    z-index: 1;
+}
+.career{
+    color: whitesmoke;
+    z-index: 1;
+    font-size:rem;
+    font-weight: bold;
+}
+.comment{
+    color:  rgb(160, 155, 155);
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 300px;
+}
+
+.skills-bottom::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 4, 95);
+    opacity: .4;
+    z-index: -1;
+}
+
+#skills-bottom .image-1{
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+}
+.img-1{
+    border-radius: 100px;
+}
+
+.view{
+
+   
+
+}
+
+/* End Skills Sections*/
+
+/* Recent Project*/
+.Project{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #191919; 
+
+}
+.project-button{
+    max-width: 400px;
+    display: inline-block;
+    background-color: black;
+    margin: 10px auto;
+   
+}
+.project-img::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    opacity: 0.2;
+}
+    
+.project-1{
+    color: #fcfc;
+    font-size: large;
+    font-weight: bolder;
+    margin: 10px;
+    overflow: hidden;
+}
+.career{
+    margin: 5px;
+}
+.project-img{
+    overflow: hidden;   
+    position: relative;
+}
+.p-img{
+
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px rgb(3, 13, 148);
+    
+}
+
+      
+
+ 
+/* End Recent Project*/
+
+/* Contact*/
+.contact {
+    flex-direction: column;
+    background-color: #191919;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.contact-items{
+    width: 400px;
+    width: 400px;
+    justify-content: center;
+}
+.contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px #000;
+    transition: .3s ease box-shadow;
+}
+.contact-item:hover{
+    box-shadow: 0px 0px 14px #fcfc;
+}
+.icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+.contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500px;
+    margin-bottom: 5px;
+    color: #fcfc;
+}
+
+.contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500px;
+    color: #fcfc;
+}
+/* End Contact*/
+
+
+/* Footer Section*/
+#Footer{
+    background-color: #000;
+
+}
+.footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+ 
+
+ .text-desc{
+    font-weight: 500px;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fcfc;
+ }
+
+ .social-items{
+    display: flex;
+    margin-bottom: 10px;
+ 
+ }
+
+  .social-icon{
+    height: 100px;
+    width: 100px;
+    margin: 0 5px;
+  }
+.image{
+    filter: grayscale(1);
+    transition: .5s ease filter;    
+  }
+  .image:hover{
+    filter: grayscale(0);
+  }
+ .copyright{
+    font-size: 1.3rem;
+    color: #fcfc;
+ }
+/* End Footer Section*/
+
+
+/* keyframe*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: o;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: rgb(250, 245, 245);
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: rgb(253, 8, 8);
+        font-weight: 500px;
+    }
+}
+/* keyframe*/
+
+/* media screen for tablet*/
+@media only screen and (min-width: 768px){
+    .cta {
+        font-size: 2rem;
+        justify-content: center;
+        
+    }
+    h1.section-title{
+        font-size: 7rem;
+    }
+   
+
+}
+
+ /* Hero */
+.hero h1{
+    font-size: 7rem;
+}
+ /* EndHero */
+
+ /* About ME Section */
+ .about{
+    flex-direction:row;
+ }
+ .col-left{
+    width: 600px
+    height: 400px;
+    padding-bottom:6px;
+ }
+
+ .col-left .about-img::after{
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid crimson;
+ }
+
+ .col-right{
+    text-align: left;
+    padding: 30px;
+ }
+ 
+ 
+ 
+
+ /* End About ME Section */
+
+ /* Skills Section */
+.skills-bottom{
+    flex-basis: 45%;
+    margin: 2.5%;
+}
+
+..section-title{
+    font-size: 7rem;
+}
+ /* End Skills Section */
+
+ /* Product Section */
+
+ .project-items{
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+ }
+
+ .project-button{{
+    height: 100%;
+ }}
+
+ .project-img{
+    height: 100%;
+ }
+
+ /* End Product Section */
+ /* Contact Section */
+ .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+ }
+ .contact-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin: 0;
+ }
+
+ .contact-items{
+    width: 20px;
+    flex-direction: row;
+
+ }
+
+ .Contact-top{
+    height: 100px;
+    width: 100px;
+ }
+
+.icon{
+    object-fit: contain;
+
+ }
+ .Contact-info{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+
+ }
+ /* End Contact Section */
+
+
+/* end media screen for tablet*/
+
+
+    </style>
+</head>
+<body>
+    <!----hero Section-->
+    <section id="Home">
+        <div class="hero container">
+            <div class="bow">
+                <div>
+                    <h1>Hello,<span></span></h1> <h1>My Name is<span></span></h1>
+                <h1> Engr. Saleh<span></span> </h1>
+                </div>
+               
+                <a href="#" type="button-9" class="cta"> MY PROJECT</a>
+                 <div class="newslatter">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                <input type="submit" name="submit" value="Lets Start">
+            </form>
+         
+
+        </div>
+
+            </div>
+        </div>
+    </section>
+    <!----End HERO Section-->
+
+    <!-- About Me Section Start -->
+    
+
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img  src="https://i.postimg.cc/kGhd7jJZ/Nexux-Pay-Mobile-Banking-App-Community-14.jpg" alt="img"/>
+                </div>
+            </div>
+            
+    
+            <div class="col-right">
+                <h1 class="section-title"> About <span>Me</span></h1>
+                <h2 class="resear">Researcher/Engineer</h2>
+                <p class="eng"> I'm a post havest engineer from Federaal Polytechnic Bauchi and I lecture 
+                    there for over 10 years. before then i worked with Nigeria Immigration Service Commission for 5 years. you can take your time to 
+                    go through my skills and hire me for the one that meet your specifications.
+                    bellow is my resume for download to whom it may concern. </p>
+                    <a href="#"><button class="call-to">Download Resume</button></a>
+
+            </div>
+
+        </div>
+       
+    </section>
+</div>
+    
+
+   <!-- End About Me Section Start -->
+    
+    <!---- My Skills Section-->
+    <section id="My-Skills">
+        <div class="skills">
+            <div class="skills-top">
+                <h1 class="section-title"> My <span>S</span>kills</h1>
+            </div>
+            <div class="Top-p">
+                <p>
+                   My skills are acquired through apprentiseship, entrepreneurship training, 
+                   conferences, workshops, mentorship, 
+                   intership, seminars, about all through self-thought and toturials.
+                </p>
+            </div>
+            <div ><a href="#"><button class="resume"><h2>Let's Chat</h2></button></a></div>
+            
+            <div class="container-items">
+                <div class="skills-bottom">
+                    <div class="box">
+                        <div class="image-1">
+                            <img class="img-1" src="https://i.postimg.cc/RV8QmGNq/Sale-Niger-logo.jpg"/>
+                        </div>
+                        <div class="career"><h2>Researcher</h2></div>
+                        <div class="comment"><h3>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                        </h3></div>
+                        
+                    </div>
+                </div>
+              
+                <div class="skills-bottom">
+                    <div class="box">
+                        <div class="image-1">
+                            <img class="img-1" src="https://i.postimg.cc/RV8QmGNq/Sale-Niger-logo.jpg"/>
+                        </div>
+                        <div class="career"><h2>Environmental Scientist</h2></div>
+                        <div class="comment"><h3>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                        </h3></div>
+                    </div>
+                </div>
+              
+                <div class="skills-bottom">
+                    <div class="box">
+                        <div class="image-1">
+                            <img class="img-1" src="https://i.postimg.cc/RV8QmGNq/Sale-Niger-logo.jpg"/>
+                        </div>
+                        <div class="career"><h2>Post-Harvest Engineer</h2></div>
+                        <div class="comment"><h3>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                        </h3></div>
+                    </div>
+                </div>
+              
+                <div class="skills-bottom">
+                    <div class="box">
+                        <div class="image-1">
+                            <img class="img-1" src="https://i.postimg.cc/RV8QmGNq/Sale-Niger-logo.jpg"/>
+                        </div>
+                        <div class="career"><h2>Public Speaker</h2></div>
+                        <div class="comment"><h3>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                        </h3></div>
+                    </div>
+                </div>
+    
+                
+            </div>
+           
+                      
+         
+            
+            
+
+        </div>
+    </section>
+ 
+    <!----End My Skills Section-->
+
+    <!----My Recent Project Section-->
+    <section id="Recent-Project">
+        <div class="Project container">
+            <div class="project-top">
+                <h1 class="section-title"> Recent <span>Project</span>
+                </h1>
+            </div>
+             
+            <div class='project-button'>
+                <div class="project-items"> 
+                    <div class="project-1"><h3>Project 1</h3></div>
+                    <div class="career"><h3>MINISTRY OF HUMANITARIAN</h3></div>
+                    
+                    <div class="comment"><h4><p>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                            I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.</p>
+                    </h4></div>
+        
+                </div>
+                <div class="project-img">
+                    <img class="p-img" src="https://i.postimg.cc/FR9yrH3H/Modelling.jpg"/>
+                </div>
+                <div ><button class="resume">View More</button></div>
+             </div>
+             <div class='project-button'>
+                <div class="project-items"> 
+                    <div class="project-1"><h3>Project 2</h3></div>
+                    <div class="career"><h3>MINISTRY OF HUMANITARIAN</h3></div>
+                    
+                    <div class="comment"><h4><p>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                            I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.</p>
+                    </h4></div>
+        
+                </div>
+                <div class="project-img">
+                    <img class="p-img" src="https://i.postimg.cc/FR9yrH3H/Modelling.jpg"/>
+                </div>
+                <div ><button class="resume">View More</button></div>
+             </div>
+             <div class='project-button'>
+                <div class="project-items"> 
+                    <div class="project-1"><h3>Project 3</h3></div>
+                    <div class="career"><h3>MINISTRY OF HUMANITARIAN</h3></div>
+                    
+                    <div class="comment"><h4><p>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                            I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.</p>
+                    </h4></div>
+        
+                </div>
+                <div class="project-img">
+                    <img class="p-img" src="https://i.postimg.cc/FR9yrH3H/Modelling.jpg"/>
+                </div>
+                <div ><button class="resume">View More</button></div>
+             </div>
+             <div class='project-button'>
+                <div class="project-items"> 
+                    <div class="project-1"><h3>Project 4</h3></div>
+                    <div class="career"><h3>MINISTRY OF HUMANITARIAN</h3></div>
+                    
+                    <div class="comment"><h4><p>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                            I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.</p>
+                    </h4></div>
+        
+                </div>
+                <div class="project-img">
+                    <img class="p-img" src="https://i.postimg.cc/FR9yrH3H/Modelling.jpg"/>
+                </div>
+                <div ><button class="resume">View More</button></div>
+             </div>
+             <div class='project-button'>
+                <div class="project-items"> 
+                    <div class="project-1"><h3>Project 5</h3></div>
+                    <div class="career"><h3>MINISTRY OF HUMANITARIAN</h3></div>
+                    
+                    <div class="comment"><h4><p>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                            I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.</p>
+                    </h4></div>
+        
+                </div>
+                <div class="project-img">
+                    <img class="p-img" src="https://i.postimg.cc/FR9yrH3H/Modelling.jpg"/>
+                </div>
+                <div ><button class="resume">View More</button></div>
+             </div>
+             <div class='project-button'>
+                <div class="project-items"> 
+                    <div class="project-1"><h3>Project 6</h3></div>
+                    <div class="career"><h3>MINISTRY OF HUMANITARIAN</h3></div>
+                    
+                    <div class="comment"><h4><p>I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.
+                            I have successfulliy established
+                            3 active companys from diffefrent field of studies. 
+                            This company are located in 6 state of the the country.</p>
+                    </h4></div>
+        
+                </div>
+                <div class="project-img">
+                    <img class="p-img" src="https://i.postimg.cc/FR9yrH3H/Modelling.jpg"/>
+                </div>
+                <div ><button class="resume">View More</button></div>
+             </div>
+ 
+
+        </div>
+            
+    </section>
+    
+        
+        
+    <!----End My Recent Project Section-->
+
+    <!----Contact Section-->
+   <section id="Contact">
+    <div class="contact container">
+        <div><h1 class="section-title">Contact <span>info</span></h1></div>
+        <div class="contact-items"><div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://i.postimg.cc/15q99QFr/icons8-phone-64.png"/>
+                </div>
+                <div class="contact-info">
+                    <h1>Phone</h1>
+                    <h2>08138376588</h2>
+                    <h2>08026395777</h2>
+                </div>
+            </div>
+
+
+            <div class="contact-item">
+                <div class="icon"><img src="https://i.postimg.cc/2yv8XRFG/icons8-composing-mail-48.png"/>
+                </div>
+                <div class="contact-info">
+                    <h1>E-mail</h1>
+                    <h2>salehjsaleh22@gmail.com</h2>
+                    <h2>info@xgv.com</h2>
+                </div>
+            </div>
+
+
+            <div class="contact-item">
+                <div class="icon"><img src="https://i.postimg.cc/rphKRBmq/icons8-home-48.png"/>
+                </div>
+                <div class="contact-info">
+                    <h1>Address</h1>
+                    <h2>Unit 2 - 3 Technology Incubation Center, Bauchi, Bauchi state
+                        -Nigeria
+                    </h2>
+    
+                </div>
+            </div>
+        </div>
+
+        </div>
+       
+          
+    </div>
+   </section>
+
+
+    <!----End Contact Section-->
+
+    <!----Footer Section-->
+    <section id="Footer">
+        <div class="footer container">
+            <div class="brand"><h1></h1><span>Engr.</span>  SALEH JIBRIN
+
+
+                 YAKMUT</h1></div>
+            <div class="text-desc"><h2>My Complete Career Portfolio</h2></div>
+             </div>
+            <div class="social-items">
+
+                <div class="social-icon">
+                    <a href="#"> <img class="image" src="https://i.postimg.cc/6QZm8Xzv/icons8-facebook-48.png"/></a>
+                </div>
+
+                 <div class="social-icon">
+                <a href="#"> <img class="image" src="https://i.postimg.cc/VLqHmGKV/icons8-linkedin-circled.gif"></a>
+            
+            </div>
+
+            <div class="social-icon">
+                <a href="#"> <img class="image" src="https://i.postimg.cc/rsyv7HTY/icons8-twitter-circled-48.png"/></a>
+            
+            </div>
+
+            <div class="social-icon">
+                <a href="#"> <img class="image" src="https://i.postimg.cc/jqwRcjBD/icons8-instagram-50.png"/></a>
+            
+            </div>
+            <div class="social-icon">
+                 <a href="#"> <img class="image" src="https://i.postimg.cc/Gpt4bfxP/icons8-youtube-48.png"/></a>
+            </div>
+
+            </div>
+            
+            <p class="copyright"> <span>Copyright @</span> 2022 Engr. Saleh J. Yakmut 
+                All right reserved</p>
+
+
+        </div>
+    </section>
+    <!----End Footer Section-->
+
+   
+</body>
+</html>
+
+
